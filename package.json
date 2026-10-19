@@ -1,0 +1,25 @@
+{
+  "name": "prevoir-shop",
+  "version": "1.0.0",
+  "description": "Prevoir marketplace: Express + SQLite backend with a vanilla JS storefront",
+  "main": "start.js",
+  "scripts": {
+    "test": "node test/smoke.mjs",
+    "start": "node start.js",
+    "dev": "node --watch start.js",
+    "test:ui": "node test/ui.mjs",
+    "test:all": "node test/smoke.mjs && node test/ui.mjs && node test/pay.mjs",
+    "test:pay": "node test/pay.mjs"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "private": true
+}
