@@ -1,0 +1,15 @@
+:root{--bg:#f7f8f2;--card:#fff;--ink:#1b2547;--mut:#5b6585;--brand:#28345e;--lime:#d7f17a;--line:#e0e4ea;--ok:#0a8f5b;--bad:#c42a12}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1226;--card:#161d3a;--ink:#f3f5ec;--mut:#a3acd0;--brand:#d7f17a;--lime:#d7f17a;--line:#2a3358;--ok:#4cd9a0;--bad:#ff9078}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.top{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:var(--card);border-bottom:1px solid var(--line)}
+.top span{color:var(--brand);background:var(--lime);color:#28345e;border-radius:6px;padding:0 6px}main{max-width:1100px;margin:0 auto;padding:20px 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;max-width:420px;margin:40px auto;display:grid;gap:12px}
+h1{margin:0;font-size:20px}p{margin:0;color:var(--mut)}input,select,button{font:inherit;border-radius:10px;border:1px solid var(--line);padding:10px 12px;background:var(--card);color:var(--ink)}
+button{cursor:pointer;background:var(--lime);color:#28345e;border:0;font-weight:600}button.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.err{color:var(--bad)}.msg{min-height:22px;margin:8px 0;color:var(--ok)}.msg.bad{color:var(--bad)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px}.stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}.stat b{display:block;font-size:22px}.stat span{color:var(--mut);font-size:13px}
+.tabs{display:flex;gap:8px;margin:16px 0 4px}.tabs button{background:transparent;color:var(--ink);border:1px solid var(--line)}.tabs button.on{background:var(--lime);color:#28345e;border-color:var(--lime)}
+.row{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:10px 0;display:grid;gap:6px}
+.row .h{display:flex;flex-wrap:wrap;gap:8px 14px;justify-content:space-between;align-items:center}.row .h b{font-size:16px}
+.pill{display:inline-block;padding:2px 10px;border-radius:99px;background:var(--bg);border:1px solid var(--line);font-size:12px;text-transform:capitalize}
+.acts{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.small{color:var(--mut);font-size:13px}

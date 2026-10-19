@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Prevoir Admin</title>
+<link rel="stylesheet" href="/admin.css">
+</head>
+<body>
+<header class="top"><b>Prevoir <span>Admin</span></b><button id="out" hidden>Lock</button></header>
+<main>
+  <form id="login" class="card">
+    <h1>Admin key</h1>
+    <p>Enter the <code>ADMIN_KEY</code> from your server settings.</p>
+    <input id="key" type="password" autocomplete="current-password" placeholder="Admin key" required>
+    <button>Open admin</button>
+    <p id="lerr" class="err"></p>
+  </form>
+  <section id="app" hidden>
+    <div id="stats" class="stats"></div>
+    <nav class="tabs"><button data-t="orders" class="on">Orders</button><button data-t="sellers">Sellers</button><button data-t="support">Support</button></nav>
+    <p id="msg" class="msg"></p>
+    <div id="view"></div>
+  </section>
+</main>
+<script src="/admin.js"></script>
+</body>
+</html>
